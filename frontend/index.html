@@ -1,26 +1,35 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Invoice Assistant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AI Invoice Assistant</h1>
-    <p>Manage your invoices smarter and easier.</p>
 
-    <h2>Welcome!</h2>
-    <p>Upload and organise your invoices in one place.</p>
+    <header>
+        <h1>AI Invoice Assistant</h1>
+        <p>Smart Invoice Management Made Simple</p>
+    </header>
 
-    <button>Upload Invoice</button>
+    <div class="container">
+        <h2>Welcome to AI Invoice Assistant</h2>
+        <p>Manage your invoices in one place.</p>
+
+        <input type="file" id="invoiceFile" accept=".pdf,.png,.jpg,.jpeg">
+
+        <br><br>
+
+        <button onclick="uploadInvoice()">Upload Invoice</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Invoice Assistant</title>
     <link rel="stylesheet" href="style.css">
 </head>
