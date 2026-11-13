@@ -2,6 +2,8 @@
 
 > One AI Assistant. Every Business. Smarter Decisions.
 
+> **Current deployment:** The runnable website in this checkout is the static invoice-selection demo in `frontend/`. The full-stack Next.js application described below is not present: its `src/` directory is missing. See [deployment notes](docs/deployment.md) for the public URL, publishing setup and limitations. The demo does not upload or analyze files.
+
 BusinessPilot AI is a full-stack business finance dashboard for small businesses (retail shops, restaurants, freelancers,
 e-commerce and service providers). It tracks income, expenses, invoices and payments in one place. An AI assistant answers
 questions about the business in plain language, using figures computed from the owner's own records. Payments run through the
