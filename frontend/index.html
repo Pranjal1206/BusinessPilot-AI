@@ -1,56 +1,28 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Invoice Assistant</title>
+    <meta name="description" content="BusinessPilot AI's invoice assistant frontend demo. Select an invoice to preview the file-selection workflow.">
+    <title>AI Invoice Assistant | BusinessPilot AI</title>
     <link rel="stylesheet" href="style.css">
+    <script src="frontend/script.js" defer></script>
 </head>
 <body>
-
     <header>
         <h1>AI Invoice Assistant</h1>
         <p>Smart Invoice Management Made Simple</p>
     </header>
 
-    <div class="container">
+    <main class="container">
         <h2>Welcome to AI Invoice Assistant</h2>
         <p>Manage your invoices in one place.</p>
 
-        <input type="file" id="invoiceFile" accept=".pdf,.png,.jpg,.jpeg">
-
-        <br><br>
-
-        <button onclick="uploadInvoice()">Upload Invoice</button>
-    </div>
-
-    <script src="script.js"></script>
+        <label for="invoiceFile">Choose an invoice (PDF, PNG or JPG)</label>
+        <input type="file" id="invoiceFile" accept=".pdf,.png,.jpg,.jpeg" aria-describedby="demoNotice uploadStatus">
+        <button type="button" id="uploadButton">Upload Invoice</button>
+        <p id="uploadStatus" class="status" role="status" aria-live="polite"></p>
+        <p id="demoNotice" class="notice">Frontend demo: this button checks your selection. Files are not uploaded, stored or analyzed.</p>
+    </main>
 </body>
 </html>
-
-    <title>AI Invoice Assistant</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <h1>AI Invoice Assistant</h1>
-        <p>Smart Invoice Management Made Simple</p>
-    </header>
-
-    <div class="container">
-        <h2>Welcome to AI Invoice Assistant</h2>
-
-        <p>
-            Manage your invoices in one place.
-            Save time with smarter invoice management.
-        </p>
-
-        <button>Upload Invoice</button>
-    </div>
-
-</body>
-</html>
-

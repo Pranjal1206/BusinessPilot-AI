@@ -1,13 +1,19 @@
+const fileInput = document.getElementById("invoiceFile");
+const uploadButton = document.getElementById("uploadButton");
+const uploadStatus = document.getElementById("uploadStatus");
 
-function uploadInvoice() {
-    const fileInput = document.getElementById("invoiceFile");
+uploadButton.addEventListener("click", () => {
+    const file = fileInput.files[0];
 
-    if (fileInput.files.length === 0) {
-        alert("Please select an invoice first!");
+    if (!file) {
+        uploadStatus.textContent = "Please select an invoice first.";
+        fileInput.focus();
         return;
     }
 
-    const file = fileInput.files[0];
+    uploadStatus.textContent = `Selected: ${file.name}. No file was uploaded.`;
+});
 
-    alert("Invoice selected: " + file.name);
-}
+fileInput.addEventListener("change", () => {
+    uploadStatus.textContent = "";
+});
